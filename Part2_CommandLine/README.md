@@ -1,4 +1,4 @@
-<img width="513" height="80" alt="image" src="https://github.com/user-attachments/assets/f4438428-fe68-46d5-afb5-ff2cc4721963" />This section focuses on learning command line. It starts by exploring a few standard commands. I reccomend working with a cheatsheet like this as well: https://linuxstans.com/bash-cheat-sheet/
+This section focuses on learning command line. It starts by exploring a few standard commands. I reccomend working with a cheatsheet like this as well: https://linuxstans.com/bash-cheat-sheet/
 
 Start by navigating your computer
 
