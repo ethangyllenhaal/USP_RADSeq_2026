@@ -72,5 +72,5 @@ Now make a population map the same way.
 Name subset it to the ingroup using grep.
 
     grep Outgroup popmap_full
-    grep –v Outgroup popmap_full
-    grep –v Outgroup popmap_full > popmap_ingroup
+    grep -v Outgroup popmap_full
+    grep -v Outgroup popmap_full > popmap_ingroup
