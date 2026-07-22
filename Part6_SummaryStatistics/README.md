@@ -27,9 +27,9 @@ Now make two corrplots. First a simple one, then one that is more complex, showi
     corrplot(corr_matrix)
     
     # more complex
-    corrplot.mixed(corr_matrix, order = 'AOE', tl.cex=0.8, tl.pos="lt"
+    corrplot.mixed(corr_matrix, order = 'AOE', tl.cex=0.8, tl.pos="lt",
              lower="ellipse", # lower corner is a visual depiction
-             upper="number", # upper is the correlation coefficient)
+             upper="number") # upper is the correlation coefficient
 
 ## Island size and genetic diversity
 
@@ -37,7 +37,7 @@ Now, chose a diversity statistic and see how strongly it is correlated with isla
 
     ggplot(data=sumstats, aes(x=log(Size), y=Pi)) +
       geom_point() + 
-      geom_smooth(method="lm“) +
+      geom_smooth(method="lm") +
       theme_bw()
 
     model = lm(data=sumstats, Pi~log(Size))
