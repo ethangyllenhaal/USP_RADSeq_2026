@@ -61,7 +61,8 @@ Next, read in your data
         ingroup_vcf <- read.vcfR("output/pachycephala_ingroup_75_thinned.vcf")
     
     # read in sample table
-    samples <- filter(read.csv("sample_table_pachycephala.csv", sep, Island!="Outgroup") # remove outgroup
+    samples <- filter(read.csv("sample_table_pachycephala.csv", sep=","), # read in the CSV
+                  Island!="Outgroup") # remove outgroup
 
 Now, just like in the PCA, convert it to a genlight and assign populations.
 
