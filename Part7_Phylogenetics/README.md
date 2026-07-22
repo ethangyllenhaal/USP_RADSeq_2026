@@ -18,7 +18,7 @@ Next, we will make a new bash script with nano (e.g., nano stacks_phylogenetics.
                 --out-path populations_out/individual --phylip-var-all \
                 --min-samples-overall 0.75
     # move and rename the output
-    mv populations_out/individual/populations.all.phylip output/NAME_75.phylip
+    grep -v "#" populations_out/individual/populations.all.phylip > output/NAME_75.phylip
 
 Finally, we will run IQTree. But first, we need to install it into our conda environment (make sure the workshop environment is activated!).
 
