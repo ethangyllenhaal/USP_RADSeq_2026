@@ -43,7 +43,7 @@ Now, chose a diversity statistic and see how strongly it is correlated with isla
     model = lm(data=sumstats, Pi~log(Size))
     summary(model)
 
-## Quantifying divergence with FSST
+## Quantifying divergence with FST
 
 We will now make a heatmap of pairwise FST values for all islands in our dataset! This will show us where divergence stands out. This method inspired by Devon DeRaad: https://devonderaad.github.io/zosterops.rad/zosterops.pairwise.fst.html. I tend to do this with a chain of commandline tools, in case alternatives are of interest: https://github.com/ethangyllenhaal/FijiPachyRad/tree/main/04_pairwise_Fst.
 
